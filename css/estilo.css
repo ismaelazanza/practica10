@@ -1,0 +1,182 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+  min-height: 100vh;
+  font-family: 'Karla', sans-serif;
+  background-color: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 65rem;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2 , h3, h4, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+/* CODIGO HEADER*/
+
+.principal{
+    background-color: #fff;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.principal h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.principal h2{
+    color: hsl(71, 73%, 54%);
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.principal p{
+    color: hsl(218, 22%, 67%);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+
+/* CODIGO MAIN*/
+
+.caja-padre{
+    display: flex;
+}
+
+.caja{
+    padding: 4rem 5rem;
+}
+
+.alineacion{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* CODIGO MAIN CAJA IZQUIERDA*/
+
+.caja-izquierda{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 1rem;
+    width: 100%;
+}
+
+.caja-izquierda .mon{
+    color: hsl(204, 43%, 93%);
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.caja-izquierda .precio{
+    display: flex;
+    align-items: center;
+}
+
+.precio h2{
+    color: hsl(204, 43%, 93%);
+    font-size: 2.6rem;
+}
+
+.precio p{
+    color: hsl(204, 43%, 93%);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-left: 1.5rem;
+}
+.caja-izquierda .descrip {
+    color: hsl(204, 43%, 93%);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.btn a{
+    background-color: hsl(71, 73%, 54%);
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-radius: .5rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.3rem;
+    box-shadow: 1rem .7rem 1rem rgba(0, 0, 0, 0.136);
+}
+
+/* CODIGO MAIN CAJA DERECHA*/
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ul li{
+    color: hsl(204, 43%, 93%);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.caja-derecha{
+    width: 100%;
+    background-color: hsl(179, 68%, 48%);
+    border-radius: 0 0 1rem 0;
+}
+
+.caja-derecha h2{
+    color: hsl(204, 43%, 93%);
+    font-size: 1.6rem;
+}
+
+
+
+@media (max-width: 600px) {
+    .caja-padre{
+        display: flex;
+        flex-direction: column;
+    }
+    .caja-izquierda{
+        border-radius: 0 0 0 0;
+    }
+
+    .caja-derecha{
+        background-color: hsl(179, 68%, 48%);
+        border-radius: 0 0 1rem 1rem;
+    }
+    .alineacion{
+        margin: 0 1rem;
+    }
+
+  }
